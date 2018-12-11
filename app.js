@@ -4,7 +4,7 @@ function getSum() {
 
   console.log("Summing: " + a + " and " + b);
 
-  $.get("http://localhost:8080/sum/?a=" + a + "&b=" + b, function( data ) {
+  $.get("http://denergym.devops.srwx.net:8080/sum/?a=" + a + "&b=" + b, function( data ) {
     $("body")
       .append(" Status: " + data.Status)
 	  .append(" Result: " + data.Result + "<br>")
@@ -18,7 +18,7 @@ function getDiff() {
 
   console.log("Difference between: " + a + " and " + b);
 
-  $.get("http://localhost:8080/diff/?a=" + a + "&b=" + b, function( data ) {
+  $.get("http://denergym.devops.srwx.net:8080/diff/?a=" + a + "&b=" + b, function( data ) {
     $("body")
       .append(" Status: " + data.Status)
       .append(" Result: " + data.Result + "<br>")
